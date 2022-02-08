@@ -1,0 +1,103 @@
+Create Database hrmdata;
+
+use hrmdata;
+
+
+
+Create table AdminLoginTab
+(uName varchar(50),
+pWord varchar(50));
+
+insert into adminlogintab values('admin','admin');
+
+Create table DeptTab
+(DeptName varchar(50),
+details varchar(50));
+
+
+Create table CategoryTab
+(catName varchar(50),
+details varchar(50));
+
+
+Create table QualificationTab
+(edName varchar(50),
+details varchar(50));
+
+Create table ProfessionTab
+(jobName varchar(50),
+details varchar(50));
+
+
+drop table empdettab;
+Create table EmpDetTab
+(empcode varchar(50),
+pWord varchar(50),
+empName varchar(50),
+eAdd varchar(250),
+mobileno  varchar(50),
+email  varchar(50),
+qualification  varchar(50),
+designation  varchar(50),
+deptname  varchar(50));
+
+
+
+Create table EmpSalTab
+(empcode varchar(50),
+basic int,
+da int,
+hra int,
+cca int,
+ta int,
+others int,
+pf int,
+esi int,
+pt int,
+lic int);
+
+
+Create table EmpAttnTab
+(salMonth varchar(50),
+empcode varchar(50),
+Attn int,
+paidleave int,
+unpaidleave int);
+
+
+Create table MonthlySalTab
+(salMonth varchar(50),
+empcode varchar(50),
+basic int,
+da int,
+hra int,
+cca int,
+ta int,
+others int,
+gTotal int,
+pf int,
+esi int,
+pt int,
+lic int,
+dTotal int,
+netTotal int);
+
+
+
+
+Create table MsgTab
+(msgNo int,
+msgDate varchar(20),
+fromEmpcode varchar(50),
+toEmpcode varchar(50),
+Details varchar(250));
+
+Create table JobTab
+(jobCode varchar(50),
+Details varchar(250),
+nWork varchar(50),
+qName varchar(50),
+Experience  varchar(50),
+tJobs  varchar(50));
+
+
